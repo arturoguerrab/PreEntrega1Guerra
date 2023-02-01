@@ -1,7 +1,12 @@
+import ItemListContainer from "./components/ItemList/ItemListContainer";
+import Layout from "./components/Layout/Layout";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hola</h1>
+      <Layout>
+        <ItemListContainer/>
+      </Layout>
     </div>
   );
 }
