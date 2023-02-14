@@ -1,0 +1,167 @@
+  [
+    {
+      "id": 1,
+      "nombre": "Anamorphine",
+      "precio": 890,
+      "categoria": "overose",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337304/Whimsy/Tarjeta%20A/tarjeta_a_i1grfh.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337304/Whimsy/Tarjeta%20A/tarjeta_aDos_aqqaw1.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337304/Whimsy/Tarjeta%20A/tarjeta_aTres_ah5fuv.jpg",
+      "descripcion": "Peonías y Rosas Damascenas + Frambuesas",
+      "about": "Inspirada en una tarde en el soleado Jardín de las Tullerías en Paris, cuando el aire es cálido con olor a flores de primavera. Anamorphine exalta el aroma floral fresco y celestial de los capullos recién florecidos."
+    },
+    {
+      "id": 2,
+      "nombre": "Monogram",
+      "precio": 750,
+      "categoria": "shrine",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337323/Whimsy/Tarjeta%20B/tarjeta_b_lanxpb.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337323/Whimsy/Tarjeta%20B/tarjeta_bDos_bcw9ad.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337323/Whimsy/Tarjeta%20B/tarjeta_bTres_mx3qs5.jpg",
+      "descripcion": "Cuero Italiano, Hojas de Violeta y Sándalo",
+      "about": "Un aroma clásico remezclado. Monogram es lujoso, perfumado y en capas con el aroma del cuero italiano. Siéntete elegante cada vez que la enciendas."
+    },
+    {
+      "id": 3,
+      "nombre": "Euphoriasme",
+      "precio": 640,
+      "categoria": "overose",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337335/Whimsy/Tarjeta%20C/tarjeta_c_gsqgcd.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337335/Whimsy/Tarjeta%20C/tarjeta_cDos_ckx5ka.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337335/Whimsy/Tarjeta%20C/tarjeta_cTres_sekjr1.jpg",
+      "descripcion": "Croissant con Frambuesas + Agua de Rosas y Arándanos",
+      "about": "El olor de una panadería parisina en una vela. Los croissants recién salidos del horno, la Crème Brulée brilla en la ventana y los ramos de flores frescos y coloridos se colocan sobre la encimera de mármol."
+    },
+    {
+      "id": 4,
+      "nombre": "Topiary",
+      "precio": 950,
+      "categoria": "shrine",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337350/Whimsy/Tarjeta%20D/tarjeta_d_mcvnjb.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337351/Whimsy/Tarjeta%20D/tarjeta_dDos_kugwwi.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337351/Whimsy/Tarjeta%20D/tarjeta_dTres_fgmmdn.jpg",
+      "descripcion": "Como un Jardín Inglés + Hiedra y Violetas",
+      "about": "Si el color verde tuviera un olor sería Topiary. Fresco y frondoso con un toque floral. La hierba recién cortada, el té de la tarde y la brisa fresca."
+    },
+    {
+      "id": 5,
+      "nombre": "Valkiria",
+      "precio": 860,
+      "categoria": "overose",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337367/Whimsy/Tarjeta%20E/tarjeta_e_nv8bgj.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337367/Whimsy/Tarjeta%20E/tarjeta_eDos_ds6een.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337367/Whimsy/Tarjeta%20E/tarjeta_eTres_ep9x6m.jpg",
+      "descripcion": "Higos, Pulpa de Melocotón, Leche de Coco y Cedro",
+      "about": "Fusiona la deliciosa jugosidad de los melocotones mezclados con higos verdes, la cremosidad de la leche de coco y el toque amaderado del cedro."
+    },
+    {
+      "id": 6,
+      "nombre": "Carnal Fruit",
+      "precio": 940,
+      "categoria": "shrine",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337393/Whimsy/Tarjeta%20F/tarjeta_f_rmbjqg.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337394/Whimsy/Tarjeta%20F/tarjeta_fDos_kwatwj.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337394/Whimsy/Tarjeta%20F/tarjeta_fTres_gtpvwt.jpg",
+      "descripcion": "Ruibarbo y Rosellas Blancas + Madera de Cerezo",
+      "about": "Las frutas, la madera y el almizcle se combinan en Carnal Fruit para crear un aroma robusto e imponente. Con extractos de ruibarbo, higos maduros, rosellas blancas y un toque de madera."
+    },
+    {
+      "id": 7,
+      "nombre": "Nudesse",
+      "precio": 910,
+      "categoria": "overose",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337405/Whimsy/Tarjeta%20G/tarjeta_g_rltmno.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337405/Whimsy/Tarjeta%20G/tarjeta_gDos_yszknn.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337405/Whimsy/Tarjeta%20G/tarjeta_gTres_ajlx2p.jpg",
+      "descripcion": "Rosa de Mayo y Rosa Damascena + Rocío",
+      "about": "La fragancia enfatiza la dulzura de los pétalos de rosa cuando la floración está en apogeo. El aroma después de la lluvia, intensamente floral, dulce y muy fresco."
+    },
+    {
+      "id": 8,
+      "nombre": "Pain Au Chocolat",
+      "precio": 920,
+      "categoria": "overose",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337412/Whimsy/Tarjeta%20H/tarjeta_h_f5yghy.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337412/Whimsy/Tarjeta%20H/tarjeta_hDos_spae4r.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337412/Whimsy/Tarjeta%20H/tarjeta_hTres_wxfcfz.jpg",
+      "descripcion": "Croissant con Chocolate y Avellanas",
+      "about": "Indulgencia francesa en una vela, masa dorada deliciosa, rellena con crema de chocolate y avellanas fileteadas. Transportate a la panadería de la esquina cerca del río Sena."
+    },
+    {
+      "id": 9,
+      "nombre": "Cult",
+      "precio": 750,
+      "categoria": "shrine",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337419/Whimsy/Tarjeta%20I/tarjeta_i_yykocv.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337419/Whimsy/Tarjeta%20I/tarjeta_iDos_jvqmj8.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337419/Whimsy/Tarjeta%20I/tarjeta_iTres_oxouui.jpg",
+      "descripcion": "Madera de Ébano, Cerezo y Pachuli",
+      "about": "Cult es un floral ahumado perfecto con toques afrutados. La combinación de la madera, el pachuli y la esencia de cerezo crean un aroma digno de obsesión."
+    },
+    {
+      "id": 10,
+      "nombre": "Almond Croissant",
+      "precio": 830,
+      "categoria": "overose",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337429/Whimsy/Tarjeta%20J/tarjeta_j_q9mbre.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337429/Whimsy/Tarjeta%20J/tarjeta_jDos_kbkf8z.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337429/Whimsy/Tarjeta%20J/tarjeta_jTres_xegatu.jpg",
+      "descripcion": "Croissant con Crema de Almendras y Licor de Amoretto",
+      "about": "Bienvenidx al cielo del Croissant. Relleno con crema de almendras y vainilla bourbon y un ligero toque de licor de amoretto. Pura dicha de Croissant."
+    },
+    {
+      "id": 11,
+      "nombre": "Stems",
+      "precio": 940,
+      "categoria": "shrine",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337437/Whimsy/Tarjeta%20K/tarjeta_k_jnjmnk.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337438/Whimsy/Tarjeta%20K/tarjeta_kDos_ov6tvj.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337438/Whimsy/Tarjeta%20K/tarjeta_kTres_rp5af5.jpg",
+      "descripcion": "Tulipanes, Rosas, Margaritas y Cítricos",
+      "about": "Una esencia súper floral para lxs flower obssesed. Stems tiene una mezcla de flores y toques cítricos que refrescarán el ambiente."
+    },
+    {
+      "id": 12,
+      "nombre": "Croissant",
+      "precio": 690,
+      "categoria": "overose",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337446/Whimsy/Tarjeta%20L/tarjeta_l_yhn7qr.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337446/Whimsy/Tarjeta%20L/tarjeta_lDos_sbdh5e.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337446/Whimsy/Tarjeta%20L/tarjeta_lTres_bvbz5d.jpg",
+      "descripcion": "100% Croissants Parisinos recién horneados",
+      "about": "A veces los sueños se hacen realidad, transportarte por un momento a un café parisino y disfrutar de un Croissant recién hecho. Captura perfectamente el olor a hojaldre dorado y la mantequilla derretida."
+    },
+    {
+      "id": 13,
+      "nombre": "Macaron Pistache",
+      "precio": 540,
+      "categoria": "overose",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337457/Whimsy/Tarjeta%20M/tarjeta_m_aa5ox5.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337456/Whimsy/Tarjeta%20M/tarjeta_mDos_rtlvtb.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337456/Whimsy/Tarjeta%20M/tarjeta_mTres_tcw9oi.jpg",
+      "descripcion": "Delicioso Macarrón de Pistacho",
+      "about": "Esta vela huele exactamente como un macarrón de pistacho parisino recién hecho. No necesitás montarte en un avión, solo tienes que encenderla y serás trasportadx a Paris."
+    },
+    {
+      "id": 14,
+      "nombre": "Cinnamon Roll",
+      "precio": 710,
+      "categoria": "overose",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337461/Whimsy/Tarjeta%20N/tarjeta_n_gcfat8.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337461/Whimsy/Tarjeta%20N/tarjeta_nDos_g1265h.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337461/Whimsy/Tarjeta%20N/tarjeta_nTres_agrcjd.jpg",
+      "descripcion": "Cinnamon Rolls + Glaseado de Vainilla",
+      "about": "Un día perfecto comienza con un Cinnamon Roll recién horneado. Hojaldre esponjoso con azúcar morena y mantequilla derretida, glaseado cremoso de vainilla. Todo eso en una vela."
+    },
+    {
+      "id": 15,
+      "nombre": "Gaiasilk",
+      "precio": 780,
+      "categoria": "overose",
+      "imagen": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337469/Whimsy/Tarjeta%20O/tarjeta_o_lrfcjf.jpg",
+      "imagenDos": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337470/Whimsy/Tarjeta%20O/tarjeta_oDos_y3vsq1.jpg",
+      "imagenTres": "https://res.cloudinary.com/dbwomkmnq/image/upload/v1676337469/Whimsy/Tarjeta%20O/tarjeta_oTres_la1xb4.jpg",
+      "descripcion": "Palo Santo, Chocolate Blanco, Vainilla y Sándalo",
+      "about": "Una infusión de palo santo, chocolate blanco, vainilla ahumada, ámbar y sándalo. Un aroma completo con notas dulces que enriquecen el ambiente."
+    }
+  ]

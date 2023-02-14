@@ -1,10 +1,21 @@
 
 
-const ItemList = ({ greeting}) => {
+const ItemList = ({ productos }) => {
+
+
     return (
-        <div style={{height:"30vh",textAlign:"center",padding:"150px", backgroundColor:"#e6e2df"}}>
-            Hola {greeting} que deseas comprar hoy?
-        </div>
+        <>
+            {
+                productos.map((element)=>{
+                    return(
+                        <div key={element.id}>
+                            {element.nombre}
+                        </div>
+                    )
+                })
+                
+            }
+        </>
     )
 }
 

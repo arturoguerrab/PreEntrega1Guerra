@@ -1,8 +1,8 @@
 
 
-const NavItem = ({ title,link }) => {
+const NavItem = ({ title }) => {
     return (
-        <a href={link}>{title}</a>
+        <li >{title}</li>
     )
 }
 

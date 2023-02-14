@@ -7,10 +7,6 @@ const Layout = ({ children }) => {
             <Header/>
 
             {children}
-
-            <footer style={{backgroundColor:"black", color:"white", height:"30vh", textAlign:"center"}}>
-                FOOTER
-            </footer>
         </>
     )
 }

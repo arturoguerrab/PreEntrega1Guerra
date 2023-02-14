@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom"
 import LogoWhimsy from "../../assets/icons/logowhimsy.gif"
-
 const BrandLogo = () => {
-    return (
-        <>
-        <a href="#"><img src={LogoWhimsy} alt="" /></a>
-        </>
+    return (    
+    <Link to='/'>
+        <img src={LogoWhimsy} alt="Logo Whimsy" />
+    </Link>
+        
     )
 }
 
