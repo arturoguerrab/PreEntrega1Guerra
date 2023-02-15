@@ -1,13 +1,17 @@
+import React from 'react'
+
 import BrandLogo from "../BrandLogo/BrandLogo"
 import CartWidget from "../CartWidget/CartWidget"
 import NavBar from "../NavBar/NavBar"
+
 import "./Header.css"
 
 
 const Header = () => {
+  
   return (
     <header>
-        <div className="Header">
+        <div className="header">
             <BrandLogo/>
             <NavBar/>
             <CartWidget/>

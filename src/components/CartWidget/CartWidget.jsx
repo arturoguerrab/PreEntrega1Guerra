@@ -1,7 +1,10 @@
+import React from 'react'
+
 import Badge from '@mui/material/Badge';
-import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+
+import { styled } from '@mui/material/styles';
 
 
 const CartWidget = () => {
@@ -15,11 +18,11 @@ const CartWidget = () => {
     }));
 
     return (
-    <IconButton aria-label="cart">
-        <StyledBadge badgeContent={4} color="secondary">
-            <ShoppingBagIcon sx={{ color: "white" }} />
-        </StyledBadge>
-    </IconButton>
+        <IconButton aria-label="cart">
+            <StyledBadge badgeContent={4} color="secondary">
+                <ShoppingBagIcon sx={{ color: "white" }} />
+            </StyledBadge>
+        </IconButton>
     )
 }
 

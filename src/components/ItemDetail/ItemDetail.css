@@ -1,0 +1,13 @@
+.producto__container{
+    padding: 5%;
+    height: 65vh;
+    background-color: rgb(240, 230, 237);
+    display: flex;
+    gap: 5%;
+
+}
+
+.producto__container img{
+    height: 400px;
+    width: 400px;
+}

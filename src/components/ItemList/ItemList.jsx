@@ -1,15 +1,27 @@
+import React from 'react'
 
+import { Link } from "react-router-dom"
+
+import "./ItemList.css"
 
 const ItemList = ({ productos }) => {
-
 
     return (
         <>
             {
                 productos.map((element)=>{
                     return(
-                        <div key={element.id}>
-                            {element.nombre}
+                        <div className="tarjeta" key={element.id}>
+                            <img className="tarjeta__img" src={element.imagenDos} loading="lazy" alt={element.descripcion}/>
+                            <div className="tarjeta__index">
+                                <h3 className="tarjeta__title">{element.nombre}</h3>
+                                <p className="descripcion">{element.descripcion}</p>
+                                <p className="precioIndex">${element.precio},00</p>
+                                <Link to={`/item/${element.id}`}>
+                                    <button>Ver Mas</button>
+                                </Link>
+                            </div>
+                            
                         </div>
                     )
                 })
