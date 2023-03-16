@@ -3,17 +3,23 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import Layout from "./components/Layout/Layout";
 
 import {BrowserRouter, Route, Routes} from "react-router-dom"
+import CartContextProvider from "./context/CartContext";
+import CheckoutContainer from "./components/CheckoutContainer/CheckoutContainer";
+
 
 function App() {
   return (
     <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<ItemListContainer/>}/>
-          <Route path="/category/:id" element={<ItemListContainer/>}/>
-          <Route path="/item/:id" element={<ItemDetailContainer/>}/>
-        </Routes>
-      </Layout>
+      <CartContextProvider>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<ItemListContainer/>}/>
+            <Route path="/category/:id" element={<ItemListContainer/>}/>
+            <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+            <Route path="/cart" element={<CheckoutContainer/>}/>
+          </Routes>
+        </Layout>
+      </CartContextProvider>
     </BrowserRouter>
   );
 }

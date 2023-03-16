@@ -1,36 +1,70 @@
 import React from 'react'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 
 import ItemDetail from '../ItemDetail/ItemDetail'
 
+import {getDocs, collection} from "firebase/firestore"
+import { db } from '../../firebaseConfig'
+import { CartContext } from '../../context/CartContext'
+
 
 const ItemDetailContainer = () => {
   
-  const [producto,setProducto]= useState([])
+  const {addToCart, obtenerCantidadId} = useContext(CartContext)
+  
   const item = useParams();
+
+  const [producto,setProducto]= useState([])
+
+  let cantidad = obtenerCantidadId(producto.id)
+  const [contador, setContador] = useState()
+  useEffect(()=>{setContador(cantidad||1)},[cantidad])
+
+  const sumar = ()=> {
+    contador < producto.stock && setContador(contador + 1)
+  }
+
+  const restar = ()=> {
+    contador > 1 && setContador(contador - 1)
+  }
+
+  const onAdd = ()=>{
+    const seleccion = { 
+      ...producto,
+      quantity: contador
+    };
+
+    addToCart(seleccion)
+  }
+
 
   useEffect(()=>{
 
-    const getData = async ()=>{
-        let response = await fetch('https://arturoguerrab.github.io/jsonData/db.json');
-        let result = response.json();
-        return result;
-      }
+    const itemCollection = collection(db, 'items')
+    
+    getDocs(itemCollection)
 
-    getData()
-      .then((res) =>{
-        const productoSeleccionado = res.find((element)=>element.id === Number(item.id))
-        setProducto(productoSeleccionado)
+    .then(res=>{
+
+      const productos = res.docs.map(product =>{
+        return {
+            ...product.data(),
+            id:product.id
+        }
       })
+
+      const productoSeleccionado = productos.find((element)=>element.id === (item.id))
+      setProducto(productoSeleccionado)
+    })
 
   },[item])
 
   return (
 
     <div className="producto">
-      <ItemDetail producto={producto}/>
+      <ItemDetail producto={producto} contador={contador} sumar={sumar} restar={restar} onAdd={onAdd}/>
     </div>
     
   )

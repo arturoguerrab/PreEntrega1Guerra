@@ -2,7 +2,7 @@ import React from 'react'
 
 import './ItemDetail.css'
 
-const ItemDetail = ({ producto }) => {
+const ItemDetail = ({ producto, contador, sumar, restar, onAdd }) => {
 
     return (
 
@@ -13,16 +13,14 @@ const ItemDetail = ({ producto }) => {
                 <h1>{producto.nombre}</h1>
                 <div>
                     <p> ${producto.precio},00</p>
-                    <select name="select" id="cantidadProducto" className="select__data">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
+                    <div>
+                        <button onClick={restar}>-</button>
+                        <span>{contador}</span>
+                        <button onClick={sumar}>+</button>
+                    </div>
                 </div>
                 <p>{producto.about}</p>
-                <button>AÑADIR AL CARRITO</button>
+                <button onClick={onAdd}>AÑADIR AL CARRITO</button>
             </div>
         </div>
         
