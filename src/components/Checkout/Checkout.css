@@ -15,7 +15,7 @@
 }
 
 .resumenContainer{
-    height: 60vh;
+    padding-bottom: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -38,4 +38,16 @@ button{
 
 button:hover{
     background-color: rgb(180, 59, 160);
+}
+
+.tituloCarrito{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.bg{
+    background-color: rgb(240, 230, 237);
 }

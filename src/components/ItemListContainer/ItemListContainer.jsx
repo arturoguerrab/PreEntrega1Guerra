@@ -9,6 +9,7 @@ import { useParams } from "react-router-dom";
 import {getDocs, collection} from "firebase/firestore"
 
 import "./ItemListContainer.css"
+import Loader from '../Loader/Loader';
 
 
 
@@ -32,19 +33,33 @@ const ItemListContainer = () => {
 
                 if(categoria.id != undefined){
                     const filtro = productos.filter((element)=>element.categoria === categoria.id)
-                    setProductos(filtro);
+                    setTimeout(() => {
+                        setProductos(filtro);
+                    }, 1000);
+                    
                 }else{
-                    setProductos(productos) 
+                    setTimeout(() => {
+                        setProductos(productos);
+                    }, 1000);
                 }
                 
             })
         
     }, [categoria]);
+
+    if(productos.length<1){
+
+        return (
+            <div className='loader'>
+                <Loader/>
+            </div>
+        )
+    }
     
 
     return (
 
-        <div className="productos">
+        <div>
             <ItemList productos={productos}/>
         </div>
         

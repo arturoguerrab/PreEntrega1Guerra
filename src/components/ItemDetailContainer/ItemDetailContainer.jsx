@@ -9,6 +9,7 @@ import ItemDetail from '../ItemDetail/ItemDetail'
 import {getDocs, collection} from "firebase/firestore"
 import { db } from '../../firebaseConfig'
 import { CartContext } from '../../context/CartContext'
+import Loader from '../Loader/Loader'
 
 
 const ItemDetailContainer = () => {
@@ -63,11 +64,21 @@ const ItemDetailContainer = () => {
       })
 
       const productoSeleccionado = productos.find((element)=>element.id === (item.id))
-      setProducto(productoSeleccionado)
+      setTimeout(() => {
+        setProducto(productoSeleccionado)
+      }, 1000);
+      
     })
 
   },[item])
 
+  if(producto.length<1){
+    return(
+      <div className='loader'>
+        <Loader/>
+      </div>
+    )
+  }
   return (
 
     <div className="producto">

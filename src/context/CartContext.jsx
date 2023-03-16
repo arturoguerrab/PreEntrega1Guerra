@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, createContext} from 'react'
+import Swal from 'sweetalert2'
 
 export const CartContext = createContext()
 
@@ -30,13 +31,31 @@ const CartContextProvider = ({children}) => {
     }
     
     const limpiarCarrito = ()=>{
-        setCart([])
+            setCart([])
     }
-
+    
     const eliminarProductoId =(id)=>{
         let nuevoCarrito= cart.filter(product => product.id !== id)
+        Swal.fire({
+            title: 'Deseas eliminar este producto?',
+            text: "La accion no se podra deshacer ",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, eliminar'
+        }).then((result) => {
 
-        setCart(nuevoCarrito)
+            setCart(nuevoCarrito)
+
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Eliminado',
+                    '',
+                    'success'
+                )
+            }
+        })
     }
 
     const existeEnCart= (id) => cart.some(element => element.id === id);
