@@ -1,0 +1,37 @@
+.formCheckout{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formCheckout label{
+
+    width: 100%;
+    padding: 10px;
+}
+
+.formCheckout input{
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.formCheckout button{
+    width: 200px;
+    
+}
+
+
+.formContainer{
+    padding-top: 100px;
+    
+    width: 100%;
+    height:100vh;
+    background-color: rgb(240, 230, 237);
+    text-align: center;
+}

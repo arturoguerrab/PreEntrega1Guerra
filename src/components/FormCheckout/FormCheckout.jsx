@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {collection, serverTimestamp, addDoc, updateDoc,doc} from "firebase/firestore"
 import { db } from "../../firebaseConfig";
+import "./FormCheckout.css"
 const FormCheckout = ({cart, precioFinal, setOrdenId, limpiarCarrito }) => {
 
     const [userInfo, setUserInfo] = useState({nombre:"", telefono:"", correo:""})
@@ -37,8 +38,8 @@ const FormCheckout = ({cart, precioFinal, setOrdenId, limpiarCarrito }) => {
     }
 
     return (
-    <div>
-        <form onSubmit={handleSubmit}>
+    <div className="formContainer">
+        <form onSubmit={handleSubmit} className="formCheckout">
         <label>
             Nombre y Apellido:
             <input 

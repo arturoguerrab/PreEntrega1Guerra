@@ -15,7 +15,7 @@ const ItemDetail = ({ producto, contador, sumar, restar, onAdd }) => {
                     <p> ${producto.precio},00</p>
                     <div>
                         <button onClick={restar}>-</button>
-                        <span>{contador}</span>
+                        <span className='contador'>{contador}</span>
                         <button onClick={sumar}>+</button>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Swal from 'sweetalert2'
 
 import { useState, useEffect, useContext } from 'react'
 import { useParams } from 'react-router-dom'
@@ -37,6 +38,12 @@ const ItemDetailContainer = () => {
     };
 
     addToCart(seleccion)
+
+    Swal.fire(
+      'Producto agregado con exito!',
+      '',
+      'success'
+    )
   }
 
 

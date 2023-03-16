@@ -2,6 +2,7 @@ import {useContext, useState} from 'react'
 import { CartContext } from '../../context/CartContext'
 import Checkout from '../Checkout/Checkout'
 import FormCheckout from '../FormCheckout/FormCheckout'
+import OrdenId from '../OrdenId/OrdenId'
 
 const CheckoutContainer = () => {
 
@@ -13,7 +14,9 @@ const CheckoutContainer = () => {
 
     if(ordenId){
         return(
-            <div>{ordenId}</div>
+            <div>
+                <OrdenId ordenId={ordenId}/>
+            </div>    
         )
     }
     return (

@@ -1,8 +1,13 @@
 # Whimsy Ecommerce
 
+Este es un eccomerce para la marca Whimsy, que se creo para ser el proyecto final del modulo React.JS en CoderHouse.
 
+Si deseas trabajar con este proyecto puedes clonar el repositorio con el siguiente comando en la consola.
 
+```
+git clone https://github.com/arturoguerrab/ProyectoFinalGuerra.git
 
+```
 
 # Getting Started with Create React App
 
