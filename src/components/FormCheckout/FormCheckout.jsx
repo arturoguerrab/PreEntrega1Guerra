@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+
 import {collection, serverTimestamp, addDoc, updateDoc,doc} from "firebase/firestore"
 import { db } from "../../firebaseConfig";
+
 import "./FormCheckout.css"
+
 import Swal from 'sweetalert2'
 
 const FormCheckout = ({cart, precioFinal, setOrdenId, limpiarCarrito}) => {

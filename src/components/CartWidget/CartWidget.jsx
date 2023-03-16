@@ -3,9 +3,10 @@ import React, { useContext } from 'react'
 import Badge from '@mui/material/Badge';
 import IconButton from '@mui/material/IconButton';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-
 import { styled } from '@mui/material/styles';
+
 import { Link } from 'react-router-dom';
+
 import { CartContext } from '../../context/CartContext';
 
 

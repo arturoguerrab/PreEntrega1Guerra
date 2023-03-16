@@ -1,10 +1,12 @@
+import {BrowserRouter, Route, Routes} from "react-router-dom"
+
+import CartContextProvider from "./context/CartContext";
+
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Layout from "./components/Layout/Layout";
-
-import {BrowserRouter, Route, Routes} from "react-router-dom"
-import CartContextProvider from "./context/CartContext";
 import CheckoutContainer from "./components/CheckoutContainer/CheckoutContainer";
+import ErrorNotFound from "./components/Error404/ErrorNotFound";
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
             <Route path="/category/:id" element={<ItemListContainer/>}/>
             <Route path="/item/:id" element={<ItemDetailContainer/>}/>
             <Route path="/cart" element={<CheckoutContainer/>}/>
+            <Route path="*" element={<ErrorNotFound/>}/>
           </Routes>
         </Layout>
       </CartContextProvider>

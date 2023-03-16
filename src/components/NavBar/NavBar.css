@@ -10,11 +10,18 @@ nav{
     display: flex;  
 }
 
-a{
+.LinkNavbar{
     text-decoration: none;
     color: antiquewhite;
+    list-style: none;
 }
 
-a:hover{
+.LinkNavbar:hover{
     color: rgb(153, 110, 194);
+}
+
+.Linkactive{
+    text-decoration: none;
+    color: rgb(229, 116, 240);
+    
 }

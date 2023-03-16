@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 import NavItem from "../NavItem/NavItem"
 
@@ -11,15 +11,15 @@ const Navbar = () => {
   return (
     <nav>
         <ul className="NavContainer">
-          <Link to='/'>
+          <NavLink to='/' className={({isActive})=> isActive ? 'Linkactive' : 'LinkNavbar'}>
             <NavItem title="All"/>
-          </Link>
-          <Link to='/category/shrine'>
+          </NavLink>
+          <NavLink to='/category/shrine' className={({isActive})=> isActive ? 'Linkactive' : 'LinkNavbar'}>
             <NavItem title="Shrine"/>
-          </Link>
-          <Link to='/category/overose'>
+          </NavLink>
+          <NavLink to='/category/overose' className={({isActive})=> isActive ? 'Linkactive' : 'LinkNavbar'}>
             <NavItem title="Overose"/>
-          </Link>
+          </NavLink>
         </ul>
     </nav>
   )

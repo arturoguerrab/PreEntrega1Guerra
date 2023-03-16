@@ -1,15 +1,17 @@
 import React from 'react'
+import { useState, useEffect, useContext } from 'react'
+
 import Swal from 'sweetalert2'
 
-import { useState, useEffect, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 
+import Loader from '../Loader/Loader'
 import ItemDetail from '../ItemDetail/ItemDetail'
 
 import {getDocs, collection} from "firebase/firestore"
 import { db } from '../../firebaseConfig'
+
 import { CartContext } from '../../context/CartContext'
-import Loader from '../Loader/Loader'
 
 
 const ItemDetailContainer = () => {
