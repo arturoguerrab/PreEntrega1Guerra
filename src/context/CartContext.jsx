@@ -48,9 +48,8 @@ const CartContextProvider = ({children}) => {
             confirmButtonText: 'Si, eliminar'
         }).then((result) => {
 
-            setCart(nuevoCarrito)
-
             if (result.isConfirmed) {
+                setCart(nuevoCarrito)
                 Swal.fire(
                     'Eliminado',
                     '',
