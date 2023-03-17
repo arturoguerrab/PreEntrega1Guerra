@@ -37,12 +37,12 @@ const ItemListContainer = () => {
                     const filtro = productos.filter((element)=>element.categoria === categoria.id)
                     setTimeout(() => {
                         setProductos(filtro);
-                    }, 1000);
+                    }, 500);
                     
                 }else{
                     setTimeout(() => {
                         setProductos(productos);
-                    }, 1000);
+                    }, 500);
                 }
                 
             })

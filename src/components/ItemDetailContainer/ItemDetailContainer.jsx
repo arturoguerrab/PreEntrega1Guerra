@@ -68,7 +68,7 @@ const ItemDetailContainer = () => {
       const productoSeleccionado = productos.find((element)=>element.id === (item.id))
       setTimeout(() => {
         setProducto(productoSeleccionado)
-      }, 1000);
+      }, 500);
       
     })
 
