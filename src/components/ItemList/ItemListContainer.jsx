@@ -4,26 +4,25 @@ import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
 import Loader from '../Loader/Loader';
 
-import "./ItemListContainer.css"
-
 import { db } from '../../firebaseConfig';
 import {getDocs, collection} from "firebase/firestore"
 
-
 import { useParams } from "react-router-dom";
-
-
 
 
 const ItemListContainer = () => {
 
     const [ productos, setProductos ] = useState([]);
-
     const categoria = useParams();
 
     useEffect(() => {
+
+        
     
         const itemCollection = collection(db, 'items')
+        
+        setProductos([])
+
         getDocs(itemCollection)
             .then((res)=>{
                 const productos = res.docs.map(product =>{
@@ -32,27 +31,25 @@ const ItemListContainer = () => {
                         id:product.id
                     }
                 })
+                
+            setTimeout(() => {
 
-                if(categoria.id != undefined){
+                if(categoria.id !== undefined){
                     const filtro = productos.filter((element)=>element.categoria === categoria.id)
-                    setTimeout(() => {
-                        setProductos(filtro);
-                    }, 500);
-                    
-                }else{
-                    setTimeout(() => {
-                        setProductos(productos);
-                    }, 500);
+                    setProductos(filtro); 
+                } else {
+                    setProductos(productos);
                 }
                 
-            })
+            },400)
+        })
         
     }, [categoria]);
 
     if(productos.length<1){
 
         return (
-            <div className='loader'>
+            <div className= 'h-screen flex justify-center items-center'>
                 <Loader/>
             </div>
         )
@@ -61,7 +58,7 @@ const ItemListContainer = () => {
 
     return (
 
-        <div>
+        <div className='pt-[80px]'>
             <ItemList productos={productos}/>
         </div>
         

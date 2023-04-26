@@ -2,10 +2,10 @@ import {useContext, useState} from 'react'
 
 import { CartContext } from '../../context/CartContext'
 
-import CarritoVacio from '../CarritoVacio/CarritoVacio'
-import Checkout from '../Checkout/Checkout'
-import FormCheckout from '../FormCheckout/FormCheckout'
-import OrdenId from '../OrdenId/OrdenId'
+import CarritoVacio from './CarritoVacio/CarritoVacio'
+import Checkout from './Checkout/Checkout'
+import FormCheckout from './FormCheckout/FormCheckout'
+import OrdenId from './OrdenId/OrdenId'
 
 const CheckoutContainer = () => {
 
@@ -16,7 +16,7 @@ const CheckoutContainer = () => {
 
     if(cart.length<1 && ordenId==null){
         return(
-            <div>
+            <div className='h-screen flex justify-center items-center'>
                 <CarritoVacio setOrdenId={setOrdenId}/>
             </div>
         )

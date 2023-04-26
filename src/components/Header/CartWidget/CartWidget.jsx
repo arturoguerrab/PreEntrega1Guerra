@@ -7,7 +7,7 @@ import { styled } from '@mui/material/styles';
 
 import { Link } from 'react-router-dom';
 
-import { CartContext } from '../../context/CartContext';
+import { CartContext } from '../../../context/CartContext';
 
 
 const CartWidget = () => {
@@ -25,7 +25,7 @@ const CartWidget = () => {
     }));
 
     return (
-        <Link to={"/cart"}>
+        <Link className='col-span-2 col-start-11 md:col-start-12 lg:col-start-11 flex justify-center' to={"/cart"}>
             <IconButton aria-label="cart">
                 <StyledBadge badgeContent={totalProductosCarrito()} color="secondary">
                     <ShoppingBagIcon sx={{ color: "white" }} />
