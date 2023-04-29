@@ -7,7 +7,7 @@ const ItemList = ({ productos }) => {
     return (
         <>
             <h1 className='font-bold text-3xl text-center pt-4 pb-6'>Productos</h1>
-            <div className='sm:w-10/12 mx-auto grid place-items-center gap-y-7 sm:gap-x-10 lg:gap-x-36 xl:gap-0 md:grid-cols-2 lg:grid-cols-3'>
+            <div className='sm:w-10/12 mx-auto grid place-items-center gap-y-7 sm:gap-x-10 lg:gap-x-32 xl:gap-x-20 xl:w-3/4 md:grid-cols-2 lg:grid-cols-3'>
             {
                 productos.map((element)=>{
                     return(
